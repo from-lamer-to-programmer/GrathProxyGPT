@@ -1,6 +1,5 @@
 .env
-<<<<<<< HEAD
-idea/
-=======
->>>>>>> cc54faac06c1a146f8850ca7eaf9050e4f25b7d7
+__pycache__/
+.idea/
+
 venv/

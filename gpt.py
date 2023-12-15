@@ -13,6 +13,17 @@ proxy = {
 # Set your OpenAI API key
 api_key = os.getenv("OPENAI_API_KEY")
 
+
+# Set up your proxy details
+proxy = {
+    'http': 'http://truleridge_gmail_com:3ff5d0e6e1@45.135.12.218:30036',
+    'https': 'http://truleridge_gmail_com:3ff5d0e6e1@45.135.12.218:30036'
+}
+
+# Set your OpenAI API key
+api_key = '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'
+
+
 # Define the API endpoint URL
 url = 'https://api.openai.com/v1/chat/completions'
 

@@ -32,6 +32,7 @@ class BoxApp(MDApp):
         self.theme_cls.theme_style = "Dark"
         self.theme_cls.primary_palette = "Teal"
 
+
         return Container()
 
 

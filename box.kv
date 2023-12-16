@@ -8,27 +8,37 @@
         MDScreen:
             CustomMDTextField:
                 multiline: True
-                hint_text: "Rectangle mode"
+                hint_text: "CHATGPT TEXT"
                 mode: "rectangle"
                 id: label
                 readonly: True
                 size_hint: 1, 1
-                padding: (10, 10)
+                padding: 10
                 text: "Hey Im ChatGPT just send me a message and wait (a little)"
 
 
-    FloatLayout:
+    GridLayout:
+        rows:2
         size_hint: 1, 0.3
-        TextInput:
-            size_hint: 1, 0.85
-            id: text_input
+        padding: 10, 0, 0, 10
         MDScreen:
+            MDTextField:
+                size_hint: 0.8, 0.95
+                id: text_input
+                hint_text: "Your text"
+                mode: "rectangle"
+                multiline: True
 
-            MDRaisedButton:
-                text: "Go"
-                size_hint: 0.2, 0.85
+
+            MDRectangleFlatButton:
+
+                theme_text_color: "Custom"
+                text_color: "white"
+                line_color: "red"
+                text: "Go!"
+                size_hint: 0.18, 0.9
                 pos_hint: {"center_x":0.9}
                 background_normal: ''
-                md_bg_color: app.theme_cls.primary_dark
+
                 on_release:
                     root.change_text()
